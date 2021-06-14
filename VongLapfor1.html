@@ -5,15 +5,31 @@
   <title>Thuc hanh vong lap</title>
 </head>
 <body>
-<h2>Thuc hanh vong lap trong javascript</h2>
-<p id="demo"></p>
+<!--Bai 1-->
+<!--<h2>Thuc hanh vong lap trong javascript</h2>-->
+<!--<p id="demo"></p>-->
+<!--<script>-->
+<!--    let text="";-->
+<!--    let i;-->
+<!--    for (i=0;i<5;i++){-->
+<!--      text += "The number this" + i + "<br>";-->
+<!--    }-->
+<!--    document.getElementById("demo").innerHTML = text;-->
+<!--</script>-->
+<!--bai 2-->
+<!--Viet chuong trinh nhap vao cac so lon hon 0.Tinh tong cac phan tu tu 1 den so vua nhap vao-->
 <script>
-    let text="";
-    let i;
-    for (i=0;i<5;i++){
-      text += "The number this" + i + "<br>";
+  let num = +prompt("nhap vao so bat ky");
+  let i;
+  let total = 0;
+  if (num>0){
+    for (i= 1;i <= num;i++){
+      total = total + i;
     }
-    document.getElementById("demo").innerHTML = text;
+    alert("Tong den so vua nhap vao la:" + total);
+  }else {
+    alert("So vua nhap vao khong lon hon 0");
+  }
 </script>
 </body>
 </html>
