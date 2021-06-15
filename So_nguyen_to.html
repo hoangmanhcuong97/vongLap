@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>So nguyen to</title>
+</head>
+<body>
+<script>
+
+    // let dem = +prompt("Nhap vao so bat ky");
+    // let i = 2;
+    // while (i < dem) {
+    //   if (dem % i == 0) {
+    //     document.write(dem + "khong la so nguyen to" + "<br>");
+    //     dem++;
+    //     break;
+    //   } else {
+    //     document.write(dem + "la so nguyen to" + "<br>")
+    //   }
+    //   // dem ++;
+    //   i++;
+    // }
+    function checkSNT(number){
+      let check = true;
+      for ( i=2;i<number;i++) {
+        if (number % i == 0) {
+          check = false;
+          break;
+        }
+      }
+      return check; //in ra gia tri trong console.log
+    }
+    function nguoidung(number){
+      // let number = +prompt("Nhap vao so bat ky");
+      let dem = 0;
+      let j=2;
+      while (dem<number){
+       if(checkSNT(j)) {
+         document.write("So nguyen to la" + j +"<br>");
+         dem ++;
+       }
+       j++;
+      }
+    }
+</script>
+</body>
+</html>
